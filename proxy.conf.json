@@ -1,0 +1,7 @@
+{
+    "/v1/*": {
+      "target": "http://api.nintriva.net",
+      "secure": false,
+      "changeOrigin": true
+    }
+   }
