@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { GlobalProvider } from "./globalprovider";
 import { Router} from "@angular/router";
 import { CookieService } from 'ngx-cookie-service';
-import { UserService } from "../../src/app/user.service";
+import { UserService } from "./service/user.service";
 
 @Component({
               selector: 'app-root',

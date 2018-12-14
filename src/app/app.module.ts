@@ -11,10 +11,10 @@ import { SignupComponent } from './signup/signup.component';
 import { CreateFormComponent } from './create-form/create-form.component';
 import { UpdateFormComponent } from './update-form/update-form.component';
 import { DetailsViewComponent } from './details-view/details-view.component';
-import { UserService } from "./user.service";
+import { UserService } from "./service/user.service";
 import { HttpClientModule } from '@angular/common/http';
 import { CookieService } from 'ngx-cookie-service';
-import{EmployeecrudService} from './employeecrud.service';
+import{EmployeecrudService} from './service/employeecrud.service';
 import { PaginatorComponent } from './paginator/paginator.component';
 
 
