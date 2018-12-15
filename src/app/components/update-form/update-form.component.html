@@ -1,0 +1,22 @@
+<h1>Update details of User <a [routerLink]="['/users/view']"> # {{employee.name}}</a> </h1>
+
+<p><a [routerLink]="['/users/create']" class="btn btn-primary" > <i class="glyphicon glyphicon-plus"></i>  Create</a>
+<a [routerLink]="['/users']" class="btn btn-primary" > <i class="glyphicon glyphicon-th-list"></i>  List </a>
+<a class="btn btn-danger" (click)="delete(employee)"> <i class="glyphicon glyphicon-trash"></i>  Delete</a> <br/> </p>
+<br/>
+<form >
+        <div class="table-responsive">
+                <table class="table">
+                        <tr><td align="right">Id</td> <td><input type="text" [(ngModel)]="employee.id" disabled="true" id="Id" name="Id"></td></tr>
+                       
+                        <tr> <td align="right">Name</td> <td><input type="text" id="Fname" name="Fname" [(ngModel)]="employee.name" class="form-control" required="required"></td> <div *ngIf="errors.name" style="color:red;"> {{errors.name}} </div></tr>
+                        
+                      
+                        <tr> <td align="right">Email</td><td><input type="text" class="form-control"  [(ngModel)]="employee.email"  name="email"></td>                        <div *ngIf="errors.email" style="color:red;"> {{errors.email}} </div>
+                        </tr>
+                        <tr> <td align="right" ></td> <td align="right"><button type="button" (click)="updateEmployee(employee)" class="btn btn-primary" >Save </button></td></tr>
+
+                </table>
+        </div>
+
+</form>

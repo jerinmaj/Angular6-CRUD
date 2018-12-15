@@ -1,0 +1,35 @@
+  <div class="col-md-4 col-md-offset-4 ">
+  
+      <h1>SignUp</h1>
+      <form>
+      <table class="table" border="0">
+          
+              <tr>
+                  <td align="right">Username:</td>
+                  <td><input type="text"  [(ngModel)]="user.username"  name="username" class="form-control" placeholder="Username">
+                    <div  *ngIf="us.errors.username" style="color:red;">{{us.errors.username}}</div>
+                </td>
+              </tr>
+              <tr>
+                  <td align="right">E-mail:</td>
+                  <td><input type="text" class="form-control"  [(ngModel)]="user.email"  name="email" placeholder="First Name">
+                  <div  *ngIf="us.errors.email" style="color:red;">{{us.errors.email}}</div></td>
+                </tr>
+              <tr>
+                  <td align="right">password:</td>
+                  <td><input type="text" class="form-control" [(ngModel)]="user.password"  name="password" placeholder="Last Name">
+                  <div  *ngIf="us.errors.password" style="color:red;">{{us.errors.password}}</div></td>
+                </tr>
+    
+              <tr>
+                  <td align="right"></td>
+                  <td align="right">
+                      <button type="button" class="btn btn-primary" (click)="createUser(user);" >SignUp</button>
+                  </td>
+              </tr>
+          
+      </table>
+    </form>
+  </div>
+
+  
