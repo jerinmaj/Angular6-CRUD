@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router,ActivatedRoute} from "@angular/router";
-import { EmployeecrudService} from '../service/employeecrud.service';
-import { GlobalProvider } from "../globalprovider";
-import { Employee_M } from '../model/employee';
+import { EmployeecrudService} from '../../service/employeecrud.service';
+import { GlobalProvider } from "../../globalprovider";
+import { Employee_M } from '../../model/employee';
 
 @Component({
   selector: 'app-update-form',

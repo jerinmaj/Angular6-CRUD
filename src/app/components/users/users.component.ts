@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { GlobalProvider } from "./../globalprovider";
+import { GlobalProvider } from "../../globalprovider";
 import { Router} from "@angular/router";
-import { EmployeecrudService} from '../service/employeecrud.service';
-import { Employee_M } from '../model/employee';
-import{ EmployeeSearch } from '../model/employeeSearch';
+import { EmployeecrudService} from '../../service/employeecrud.service';
+import { Employee_M } from '../../model/employee';
+import{ EmployeeSearch } from '../../model/employeeSearch';
 
 
 @Component({

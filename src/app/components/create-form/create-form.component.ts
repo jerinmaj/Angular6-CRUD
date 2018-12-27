@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router} from "@angular/router";
-import { EmployeecrudService} from '../service/employeecrud.service';
-import { AddEmployee } from '../model/addEmployee';
+ import { EmployeecrudService} from '../../service/employeecrud.service';
+import { AddEmployee } from '../../model/addEmployee';
 @Component({
   selector: 'app-create-form',
   templateUrl: './create-form.component.html',

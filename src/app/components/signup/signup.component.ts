@@ -1,11 +1,11 @@
 import { Component, OnInit,Input } from '@angular/core';
 
-import { UserService } from "../service/user.service";
+import { UserService } from "../../service/user.service";
 
 import { Router} from "@angular/router";
 
-import { GlobalProvider } from "./../globalprovider";
-import { User } from '../model/user';
+import { GlobalProvider } from "../../globalprovider";
+import { User } from '../../model/user';
 
 
 @Component({

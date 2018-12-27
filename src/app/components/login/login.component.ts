@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { UserService } from "../service/user.service";
+import { UserService } from "../../service/user.service";
 
 import { Router } from "@angular/router";
 
-import { GlobalProvider } from "./../globalprovider";
-import { LoginForm } from '../model/loginform';
+import { GlobalProvider } from "../../globalprovider";
+import { LoginForm } from '../../model/loginform';
 
 @Component({
   selector: 'app-login',

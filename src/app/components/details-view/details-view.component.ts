@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { GlobalProvider } from "./../globalprovider";
+import { GlobalProvider } from "../../globalprovider";
 import { Router,ActivatedRoute} from "@angular/router";
-import { EmployeecrudService} from '../service/employeecrud.service';
-import { Employee_M } from '../model/employee';
+import { EmployeecrudService} from '../../service/employeecrud.service';
+import { Employee_M } from '../../model/employee';
 
 
 @Component({
